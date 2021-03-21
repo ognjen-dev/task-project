@@ -1,9 +1,10 @@
+import Header from 'app/components/Header';
 import './App.css';
 
 function App() {
   return (
-    <div className="grid grid-cols-3 gap-12">
-      yo
+    <div className="">
+      <Header />
     </div>
   );
 }
