@@ -3,7 +3,7 @@ import ListItem from 'app/components/ListItem'
 
 const List = () => {
     return (
-        <ul>
+        <ul className="pt-1 bg-white">
             <ListItem itemPlaceholder="item" />
             <ListItem itemPlaceholder="item" />
             <ListItem itemPlaceholder="item" />

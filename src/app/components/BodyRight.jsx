@@ -1,9 +1,10 @@
 import React from 'react'
+import Advert from 'app/components/Advert'
 
 const BodyRight = () => {
     return (
-        <div>
-            right
+        <div className="overflow-visible">
+            <Advert />
         </div>
     )
 }

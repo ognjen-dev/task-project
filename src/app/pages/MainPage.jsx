@@ -5,8 +5,13 @@ import Body from "app/components/Body";
 const MainPage = () => {
   return (
     <div>
-      <Header />
-      <Body />
+      <div className="">
+
+      </div>
+      <div>
+        <Header />
+        <Body />
+      </div>
     </div>
   );
 };

@@ -5,7 +5,8 @@ import SelectDropdown from "app/components/SelectDropdown";
 
 const NavFilters = () => {
   return (
-    <div>
+    <div className="bg-white rounded-t-sm">
+      
       <div className="flex flex-row justify-between py-8 lg:px-6 px-3">
         <div className="lg:block hidden max-h-14">
           <Button
@@ -22,26 +23,33 @@ const NavFilters = () => {
             buttonText="+ Add project"
             textSize="md"
             textStyle="bold"
-            py="2"
+            py="3"
           />
         </div>
         <SearchInput />
       </div>
       {/* red ispod */}
-      <div className="px-10 flex flex-row items-center justify-between border-b pb-8">
-        <p className="font-bold font-mono text-lg">Recent</p>
-        <div className="flex flex-row">
-          <div className="mr-3">
-            <SelectDropdown
-              selectPlaceholder="By Value"
-              selectValue="by value"
-            />
-          </div>
-          <div className="">
-            <SelectDropdown
-              selectPlaceholder="By Value"
-              selectValue="by value"
-            />
+      <div className="">
+        <div>
+          <p className="ml-6 mb-8 font-bold font-mono text-lg lg:hidden">
+            Recent
+          </p>
+        </div>
+        <div className="flex flex-row items-center justify-between border-b pb-8">
+          <p className="font-bold font-mono text-lg lg:block hidden ml-9">Recent</p>
+          <div className="flex flex-row justify-center ml-5 lg:mr-7">
+            <div className="mr-7">
+              <SelectDropdown
+                selectPlaceholder="By Value"
+                selectValue="by value"
+              />
+            </div>
+            <div className="">
+              <SelectDropdown
+                selectPlaceholder="By Value"
+                selectValue="by value"
+              />
+            </div>
           </div>
         </div>
       </div>

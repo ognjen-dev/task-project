@@ -4,7 +4,7 @@ const SelectDropdown = ({ selectPlaceholder, selectValue }) => {
   return (
     <div>
       <select
-        className="px-2 py-1 font-semibold font-mono bg-gray-50 text-gray-400 rounded-md"
+        className="lg:px-2 lg:py-1 font-semibold font-mono px-5 py-2 w-36 bg-gray-50 text-gray-400 rounded-md"
         name="items"
         id="items"
       >
