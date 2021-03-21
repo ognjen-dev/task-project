@@ -3,7 +3,7 @@ import Button from 'app/components/Button';
 
 const Header = () => {
   return (
-    <div className="lg:px-48 px-1 flex flex-row justify-between py-5 shadow-md">
+    <div className="lg:px-48 md:px-48 px-1 flex flex-row justify-between py-5 shadow-md">
       <p className="font-mono font-bold text-3xl inline-flex justify-start">
         ✔️Tasks
       </p>
