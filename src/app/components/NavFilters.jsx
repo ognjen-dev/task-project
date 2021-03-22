@@ -40,7 +40,7 @@ const NavFilters = () => {
       {/* red ispod */}
       <div className="">
         <div>
-          <p className="ml-6 mb-8 font-bold font-mono text-lg lg:hidden">
+          <p className="ml-6  mb-8 font-bold font-mono text-lg lg:hidden">
             Recent
           </p>
         </div>
