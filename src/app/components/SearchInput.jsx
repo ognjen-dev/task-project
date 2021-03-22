@@ -3,15 +3,16 @@ import React from "react";
 const SearchInput = () => {
   return (
     <div className="lg:ml-2 ml-1 bg-gray-50 flex flex-row justify-between w-3/5 rounded-md items-center pr-3 py-1 mx-2 lg:text-md text-xs lg:max-w-xl -mr-0 xl:mr-0 font-semibold outline-none md:py-1">
-      <p className="text-gray-400 font-bold ml-4">
+      <input type="text" className="text-gray-400 font-bold ml-4 bg-gray-50 outline-none" placeholder="Search Projects" />
+      {/* <p className="text-gray-400 font-bold ml-4">
         Search projects
-      </p>
+      </p> */}
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="lightgray"
-          className="w-6 h-6 lg:mr-4 "
+          className="w-6 h-6 lg:mr-4"
         >
           <path
             fillRule="evenodd"
