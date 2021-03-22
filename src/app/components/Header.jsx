@@ -12,14 +12,19 @@ const Header = () => {
         <button className="hover:underline text-gray-700 font-semibold lg:mr-8 mr-3 font-mono">
           Demo user
         </button>
-
+        {/* 
         <Button
           buttonColor="blue"
           buttonText="Sign up"
           textSize="md"
           textStyle="bold"
           py="1.5"
-        />
+        /> */}
+        <button
+          className={`bg-blue-600 hover:bg-blue-700 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
+        >
+          Sign up
+        </button>
       </div>
     </div>
   );
