@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-gray-100 w-full h-full z-negative">
+    <div className="bg-gray-100 w-full min-h-screen z-negative">
       <div className="">
         <MainPage />
       </div>
