@@ -9,7 +9,7 @@ const NavFilters = () => {
       <div className="flex flex-row justify-between py-8 lg:px-6 px-3">
         <div className="lg:block hidden max-h-14">
           <button
-            className={`bg-blue-600 hover:bg-blue-700 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
+            className={`focus:outline-none bg-blue-600 hover:bg-blue-700 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
           >
             + Add project
           </button>
@@ -23,7 +23,7 @@ const NavFilters = () => {
         </div>
         <div className="lg:hidden ">
           <button
-            className={`bg-blue-600 hover:bg-blue-700 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
+            className={`focus:outline-none bg-blue-600 hover:bg-blue-700 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
             >
             + Add project
           </button>
