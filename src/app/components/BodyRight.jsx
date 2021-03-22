@@ -1,9 +1,10 @@
 import React from "react";
 import Advert from "app/components/Advert";
+import 'app/style.css'
 
 const BodyRight = () => {
   return (
-    <div className="overflow-y max-h-screen">
+    <div className="overflow-y  overflow-scroll max-h-screen">
       <div className="flex flex-row justify-between font-semibold items-baseline py-6 lg:px-6 px-3">
         <p className="text-lg">Top Templates</p>
         <a href="/" className="text-gray-400 text-md font-semibold hover:text-blue-600">See All&#10132;</a>

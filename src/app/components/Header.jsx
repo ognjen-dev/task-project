@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "app/components/Button";
 
 const Header = () => {
   return (

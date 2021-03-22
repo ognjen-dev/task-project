@@ -41,11 +41,11 @@
   z-index: -1;
 }
 
-.no-scrollbar::-webkit-scrollbar {
+.ovf::-webkit-scrollbar {
   display: none;
 }
 
-.no-scrollbar {
+.ovf {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
