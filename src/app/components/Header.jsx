@@ -8,7 +8,7 @@ const Header = () => {
       </a>
 
       <div className="flex flex-row lg:mr-0 mr-1">
-        <button className="focus:outline-none hover:underline text-gray-700 font-semibold lg:mr-8 mr-3 font-mono">
+        <button className="focus:outline-none hover:underline text-gray-700 font-bold lg:mr-8 mr-3 font-mono">
           Demo user
         </button>
         {/* 
