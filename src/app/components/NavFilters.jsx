@@ -5,7 +5,7 @@ import SelectDropdown from "app/components/SelectDropdown";
 
 const NavFilters = () => {
   return (
-    <div className="bg-white rounded-t-sm">
+    <div className="bg-white rounded-t-md">
       <div className="flex flex-row justify-between py-8 lg:px-6 px-3">
         <div className="lg:block hidden max-h-14">
           <button

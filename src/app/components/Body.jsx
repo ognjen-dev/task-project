@@ -8,7 +8,7 @@ const Body = () => {
       <div className="rounded-md w-full h-screen lg:p-0 mx-1 lg:w-4/6 lg:mr-4">
         <BodyLeft />
       </div>
-      <div className="rounded-md w-96 lg:block hidden bg-white">
+      <div className="rounded-md w-96 lg:block hidden ">
         <BodyRight />
       </div>
     </div>
