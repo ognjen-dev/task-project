@@ -5,11 +5,11 @@ import SelectDropdown from "app/components/SelectDropdown";
 
 const NavFilters = () => {
   return (
-    <div className="bg-white rounded-t-md">
+    <div className="bg-white rounded-t-xl">
       <div className="flex flex-row justify-between py-8 lg:px-6 px-3">
         <div className="lg:block hidden max-h-14">
           <button
-            className={`focus:outline-none bg-blue-600 hover:bg-blue-700 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
+            className={`focus:outline-none bg-blue-500 hover:bg-blue-600 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
           >
             + Add project
           </button>
@@ -23,7 +23,7 @@ const NavFilters = () => {
         </div>
         <div className="lg:hidden ">
           <button
-            className={`focus:outline-none bg-blue-600 hover:bg-blue-700 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
+            className={`focus:outline-none bg-blue-500 hover:bg-blue-600 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
             >
             + Add project
           </button>
@@ -44,7 +44,7 @@ const NavFilters = () => {
             Recent
           </p>
         </div>
-        <div className="flex flex-row items-center justify-between border-b pb-8">
+        <div className="flex flex-row items-center justify-between border-b border-gray-100 pb-8">
           <p className="font-bold font-mono text-lg lg:block hidden ml-9">
             Recent
           </p>

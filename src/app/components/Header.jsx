@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="lg:px-52 md:px-52 px-2 flex flex-row justify-between py-5 shadow-sm bg-white">
+    <div className="lg:px-80 md:px-52 px-2 flex flex-row justify-between py-5 shadow-sm bg-white">
       <a href="/" className="font-mono font-bold text-3xl inline-flex justify-start hover:opacity-70">
         ✔️Tasks
       </a>
@@ -20,7 +20,7 @@ const Header = () => {
           py="1.5"
         /> */}
         <button
-          className={`focus:outline-none bg-blue-600 hover:bg-blue-700 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
+          className={`focus:outline-none bg-blue-500 hover:bg-blue-600 text-white text-md rounded-md px-4 py-1 font-bold font-mono`}
         >
           Sign up
         </button>

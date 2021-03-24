@@ -4,12 +4,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-gray-100 w-full min-h-screen z-negative">
-      <div className="">
+    <div className="page">
         <MainPage />
-      </div>
     </div>
   );
 }
-
+// bring back regular bg b4 pushing code
 export default App;
