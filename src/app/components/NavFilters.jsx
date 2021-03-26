@@ -6,13 +6,12 @@ import SelectDropdown from "app/components/SelectDropdown";
 import { InputContext } from "app/components/context";
 
 const NavFilters = () => {
-
-  const context = useContext(InputContext)
-  const { isFormOpen, setisFormOpen, setInputText, InputText } = context
+  const context = useContext(InputContext);
+  const { isFormOpen, setisFormOpen, setInputText, InputText } = context;
 
   const handleFormBool = () => {
-    setisFormOpen((prevState) => prevState = false)
-  }
+    setisFormOpen((prevState) => (prevState = false));
+  };
 
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
@@ -38,11 +37,12 @@ const NavFilters = () => {
         </div>
         <div className="lg:hidden ">
           <button
+            onClick={() => setisFormOpen(true)}
             className={`focus:outline-none bg-blue-500 hover:bg-blue-600 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
-            >
+          >
             + Add project
           </button>
-            {/* <Button
+          {/* <Button
               buttonColor="blue"
               buttonText="+ Add project"
               textSize="md"

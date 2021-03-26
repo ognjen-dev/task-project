@@ -27,7 +27,7 @@ const FormEdit = () => {
     setInputText("")
   };
   return (
-    <div className="shadow-sm bg-white rounded-xl w-full min-h-screen z-negative">
+    <div className="shadow-sm bg-white rounded-xl w-full min-h-screen">
       <div className="p-5 overflow-y overflow-x-hidden overflow-scroll max-h-screen ">
         <div className="flex flex-row justify-between font-semibold items-baseline py-6 lg:px-6 px-3">
           {activeTodo != null ? <h1>{activeTodo.text}</h1> : <h1>!error!</h1>}

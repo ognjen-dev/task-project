@@ -4,7 +4,7 @@ import List from "app/components/List";
 
 const BodyLeft = () => {
   return (
-    <div className="shadow-sm">
+    <div className="shadow-sm mb-5">
       <NavFilters />
       <List />
     </div>
