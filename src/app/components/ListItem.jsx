@@ -31,14 +31,16 @@ const ListItem = ({ text, todo }) => {
   };
 
   const activateTodoHandler = () => {
-    setactiveTodo(todo)
+    setactiveTodo(todo);
   };
 
   return (
-    <div>
-        <button onClick={activateTodoHandler}>{text}</button>
-        <button onClick={completeHandler}>✔️</button>
-        <button onClick={deleteHandler}>❌</button>
+    <div className="bg-gray-50 rounded-md mx-6 py-7 my-2 flex flex-row justify-between px-5 items-center">
+      <button className="text-lg font-bold ml-5 focus:outline-none" onClick={activateTodoHandler}>{text}</button>
+      <div>
+        <button className="text-lg hover:opacity-60" onClick={completeHandler}>✔️</button>
+        <button className="ml-5 text-lg hover:opacity-60" onClick={deleteHandler}>❌</button>
+      </div>
     </div>
   );
 };

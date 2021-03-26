@@ -66,7 +66,7 @@ const NavFilters = () => {
           <div className="flex flex-row justify-center ml-5 lg:mr-7">
             <div className="mr-7">
               <SelectDropdown
-                selectPlaceholder="By Value"
+                selectPlaceholder="By Votes"
                 selectValue="by value"
               />
             </div>
