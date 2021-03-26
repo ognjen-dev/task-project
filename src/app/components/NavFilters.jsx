@@ -8,11 +8,15 @@ import { InputContext } from "app/components/context";
 const NavFilters = () => {
 
   const context = useContext(InputContext)
-  const { isFormOpen, setisFormOpen } = context
+  const { isFormOpen, setisFormOpen, setInputText, InputText } = context
 
   const handleFormBool = () => {
     setisFormOpen((prevState) => prevState = false)
   }
+
+  const inputTextHandler = (e) => {
+    setInputText(e.target.value);
+  };
 
   return (
     <div className="bg-white rounded-t-xl">
