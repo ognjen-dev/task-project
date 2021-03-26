@@ -12,8 +12,6 @@ const MainPage = () => {
     <div>
       {isFormOpen === true ? <Form /> : null}
       <div className=""></div>
-      {/* until I figure out how to make Form be over everything else */}
-      {/* {isFormOpen === false ? <div><Header /><Body /></div> : null} */}
       <div className="z-10 relative">
         <Header />
         <Body />
