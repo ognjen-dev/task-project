@@ -41,6 +41,10 @@
   z-index: -1;
 }
 
+.z-over {
+  z-index: 0;
+}
+
 .ovf::-webkit-scrollbar {
   display: none;
 }

@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import SearchInput from "app/components/SearchInput";
 import Button from "app/components/Button";
+import Form from "app/components/Form";
 import SelectDropdown from "app/components/SelectDropdown";
+import { InputContext } from "app/components/context";
 
 const NavFilters = () => {
+
+  const context = useContext(InputContext)
+  const { isFormOpen, setisFormOpen } = context
+
+  const handleFormBool = () => {
+    setisFormOpen((prevState) => prevState = false)
+  }
+
   return (
     <div className="bg-white rounded-t-xl">
       <div className="flex flex-row justify-between py-8 lg:px-6 px-3">
         <div className="lg:block hidden max-h-14">
           <button
+            onClick={() => setisFormOpen(true)}
             className={`focus:outline-none bg-blue-500 hover:bg-blue-600 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
           >
             + Add project
