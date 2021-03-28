@@ -55,7 +55,7 @@
 }
 
 html {
-  @apply bg-gray-800
+  @apply bg-gray-50
 }
 
 .fade-in {
