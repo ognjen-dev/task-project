@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "app/components/Header";
 import Body from "app/components/Body";
 import InputProvider, { InputContext } from "app/components/context";
@@ -7,7 +7,29 @@ import "../../App.css";
 
 const MainPage = () => {
   const context = useContext(InputContext);
-  const { isFormOpen, setisFormOpen } = context;
+  const { isFormOpen, setisFormOpen, todos, setTodos } = context;
+
+  const saveLocalTodos = () => {
+      localStorage.setItem("todos", JSON.stringify(todos));
+    }
+
+  const getLocalTodos = () => {
+    if (localStorage.getItem("todos") === null) {
+      localStorage.setItem("todos", JSON.stringify([]));
+    } else {
+      let todoLocal = JSON.parse(localStorage.getItem("todos"))
+      setTodos(todoLocal)
+      console.log(todoLocal);
+    }
+  };
+
+  useEffect(() => {
+    getLocalTodos()
+  }, [])
+  
+  useEffect(() => {
+    saveLocalTodos()
+  }, [todos])
   return (
     <div>
       {isFormOpen === true ? <Form /> : null}
