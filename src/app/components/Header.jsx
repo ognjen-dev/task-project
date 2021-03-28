@@ -9,7 +9,7 @@ const Header = () => {
 
       <div className="flex flex-row lg:mr-0 mr-1">
         <button className="focus:outline-none hover:underline text-gray-700 font-bold lg:mr-8 mr-3 font-mono">
-          Demo user
+          Admin
         </button>
         {/* 
         <Button
@@ -22,7 +22,7 @@ const Header = () => {
         <button
           className={`focus:outline-none bg-blue-500 hover:bg-blue-600 text-white text-md rounded-md px-4 py-1 font-bold font-mono`}
         >
-          Sign up
+          Add project
         </button>
       </div>
     </div>

@@ -23,7 +23,7 @@ const NavFilters = () => {
         <div className="lg:block hidden max-h-14">
           <button
             onClick={() => setisFormOpen(true)}
-            className={`focus:outline-none bg-blue-500 hover:bg-blue-600 text-white text-md rounded-md px-5 py-3 font-bold font-mono`}
+            className={`focus:outline-none bg-blue-500 hover:bg-blue-600 text-white text-md rounded-md px-5 py-2 font-bold font-mono`}
           >
             + Add project
           </button>
@@ -60,7 +60,7 @@ const NavFilters = () => {
           </p>
         </div>
         <div className="flex flex-row items-center justify-between border-gray-100 pb-8">
-          <p className="font-bold font-mono text-lg lg:block hidden ml-9">
+          <p className="font-bold font-mono text-md lg:block hidden ml-12">
             Recent
           </p>
           <div className="flex flex-row justify-center ml-5 lg:mr-7">

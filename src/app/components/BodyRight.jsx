@@ -14,8 +14,8 @@ const BodyRight = () => {
           See All&#10132;
         </a>
       </div>
-      <div className="p-5 overflow-y overflow-x-hidden overflow-scroll max-h-screen ">
-        <div className="flex flex-row justify-between font-semibold items-baseline py-6 lg:px-6 px-3"></div>
+      <div className="-mt-12 px-5 overflow-y overflow-x-hidden overflow-scroll max-h-screen ">
+        <div className="flex flex-row justify-between font-semibold items-baseline pb-6 lg:px-6 px-3"></div>
         <Advert />
         <Advert />
         <Advert />

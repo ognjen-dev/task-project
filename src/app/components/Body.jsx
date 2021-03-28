@@ -9,7 +9,7 @@ const Body = () => {
   const { activeTodo, setactiveTodo } = context;
   return (
     <div>
-      <div className="font-body lg:px-72 md:px-32 pr-2 pl-0 lg:flex lg:flex-row md:flex md:flex-col  justify-center mt-5 py-5">
+      <div className="font-body lg:px-64 md:px-32 pr-2 pl-0 lg:flex lg:flex-row md:flex md:flex-col  justify-center mt-5 py-5">
         <div className="rounded-xl w-full lg:h-screen lg:p-0 mx-1 lg:w-4/6 lg:mr-4">
           <BodyLeft />
         </div>
