@@ -19,7 +19,7 @@ const NavFilters = () => {
 
   return (
     <div className={`rounded-t-xl bg-white ${todos.length < 0 ? `rounded-b-xl` : `rounded-b-none`}`}>
-      <div className="flex flex-row justify-between py-8 lg:px-6 px-3">
+      <div className="flex flex-row justify-between items-center py-8 lg:px-6 px-3">
         <div className="lg:block hidden max-h-14">
           <button
             onClick={() => setisFormOpen(true)}

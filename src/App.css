@@ -55,5 +55,18 @@
 }
 
 html {
-  @apply bg-gray-100
+  @apply bg-gray-50
+}
+
+.fade-in {
+  animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
