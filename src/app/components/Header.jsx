@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="lg:px-80 md:px-52 px-2 flex flex-row justify-between py-5 shadow-sm bg-white">
+    <div className="lg:px-64 md:px-52 px-2 flex flex-row justify-between py-5 shadow-sm bg-white">
       <a href="/" className="font-mono font-bold text-3xl inline-flex justify-start hover:opacity-70">
         ✔️Tasks
       </a>
