@@ -7,7 +7,7 @@ import { InputContext } from "app/components/context";
 
 const NavFilters = () => {
   const context = useContext(InputContext);
-  const { isFormOpen, setisFormOpen, setInputText, InputText } = context;
+  const { isFormOpen, setisFormOpen, setInputText, InputText, todos, setTodos } = context;
 
   const handleFormBool = () => {
     setisFormOpen((prevState) => (prevState = false));
@@ -18,7 +18,7 @@ const NavFilters = () => {
   };
 
   return (
-    <div className="bg-white rounded-t-xl">
+    <div className={`rounded-t-xl bg-white ${todos.length < 0 ? `rounded-b-xl` : `rounded-b-none`}`}>
       <div className="flex flex-row justify-between py-8 lg:px-6 px-3">
         <div className="lg:block hidden max-h-14">
           <button

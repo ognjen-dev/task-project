@@ -28,7 +28,7 @@ const Form = () => {
   };
 
   return (
-    <div className="z-20 absolute bg-black bg-opacity-70 min-h-screen w-full flex flex-col justify-center items-center">
+    <div className="z-20 fixed min-h-screen bg-black bg-opacity-70 w-full flex flex-col justify-center items-center">
       <div className="h-52 w-80 pb-3 bg-white flex flex-col justify-center items-center">
         <p className="text-xl font-bold mb-5 text-gray-800">New Project</p>
         <form className="bg-white flex flex-col items-center justify-center">
