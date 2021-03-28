@@ -5,7 +5,7 @@ import "app/style.css";
 const BodyRight = () => {
   return (
     <div className="shadow-sm bg-white rounded-xl w-full min-h-screen">
-      <div className="flex flex-row justify-between items-center p-5">
+      <div className="bg-white rounded-t-xl relative z-20 flex flex-row justify-between items-center p-5">
         <p className="text-lg font-bold">Top Templates</p>
         <a
           href="/"
