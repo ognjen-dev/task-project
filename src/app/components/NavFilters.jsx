@@ -7,7 +7,14 @@ import { InputContext } from "app/components/context";
 
 const NavFilters = () => {
   const context = useContext(InputContext);
-  const { isFormOpen, setisFormOpen, setInputText, InputText, todos, setTodos } = context;
+  const {
+    isFormOpen,
+    setisFormOpen,
+    setInputText,
+    InputText,
+    todos,
+    setTodos,
+  } = context;
 
   const handleFormBool = () => {
     setisFormOpen((prevState) => (prevState = false));
@@ -18,7 +25,11 @@ const NavFilters = () => {
   };
 
   return (
-    <div className={`rounded-t-xl bg-white ${todos.length < 0 ? `rounded-b-xl` : `rounded-b-none`}`}>
+    <div
+      className={`rounded-t-xl bg-white ${
+        todos.length < 0 ? `rounded-b-xl` : `rounded-b-none`
+      }`}
+    >
       <div className="flex flex-row justify-between items-center py-8 lg:px-6 px-3">
         <div className="lg:block hidden max-h-14">
           <button
@@ -27,13 +38,6 @@ const NavFilters = () => {
           >
             + Add project
           </button>
-          {/* <Button
-            buttonColor="blue"
-            buttonText="+ Add project"
-            textSize="md"
-            textStyle="bold"
-            py="3"
-          /> */}
         </div>
         <div className="lg:hidden ">
           <button
@@ -42,13 +46,6 @@ const NavFilters = () => {
           >
             + Add project
           </button>
-          {/* <Button
-              buttonColor="blue"
-              buttonText="+ Add project"
-              textSize="md"
-              textStyle="bold"
-              py="3"
-            /> */}
         </div>
         <SearchInput />
       </div>
