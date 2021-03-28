@@ -59,7 +59,7 @@ const NavFilters = () => {
             Recent
           </p>
         </div>
-        <div className="flex flex-row items-center justify-between border-b border-gray-100 pb-8">
+        <div className="flex flex-row items-center justify-between border-gray-100 pb-8">
           <p className="font-bold font-mono text-lg lg:block hidden ml-9">
             Recent
           </p>

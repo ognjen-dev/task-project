@@ -6,8 +6,8 @@ const List = () => {
   const context = useContext(InputContext);
   const { InputText, setInputText, todos, setTodos } = context;
   return (
-    <div>
-      <ul className="pt-1 rounded-b-xl bg-white pb-1 mb-5">
+    <div className="">
+      <ul className="pt-1 rounded-b-xl  bg-white pb-1 mb-5">
         {todos.map((todo) => (
             <ListItem todo={todo} text={todo.text} key={todo.id} />
         ))}

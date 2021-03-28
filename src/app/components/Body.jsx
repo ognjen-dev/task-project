@@ -13,7 +13,7 @@ const Body = () => {
         <div className="rounded-xl w-full lg:h-screen lg:p-0 mx-1 lg:w-4/6 lg:mr-4">
           <BodyLeft />
         </div>
-        <div className="rounded-xl lg:w-96 mt-5 lg:mt-0 lg:ml-1 ml-1 w-full ">
+        <div className="rounded-xl lg:w-96 mt-5 lg:mt-0 lg:ml-1 ml-1 w-full">
           {activeTodo === null ? <BodyRight /> : <div><FormEdit /></div> }
         </div>
       </div>
