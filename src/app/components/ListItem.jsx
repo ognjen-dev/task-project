@@ -36,7 +36,7 @@ const ListItem = ({ text, todo }) => {
   };
 
   return (
-    <div onClick={activateTodoHandler} className="cursor-pointer bg-gray-50 rounded-md mx-6 py-7 my-2 flex flex-row justify-between px-5 items-center">
+    <div onClick={activateTodoHandler} className="cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-md mx-6 py-7 my-2 flex flex-row justify-between px-5 items-center">
       <p
         className="text-lg font-bold ml-5 focus:outline-none"
       >
