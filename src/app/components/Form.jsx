@@ -27,6 +27,12 @@ const Form = () => {
     setInputText("");
   };
 
+  const handleKeypressSubmit = (e) => {
+    if (e.keyCode === 13) {
+      submitTodoHandler();
+    }
+  };
+
   return (
     <div className="fade-in z-20 fixed min-h-screen bg-black bg-opacity-70 w-full flex flex-col justify-center items-center">
       <div className="h-52 w-80 pb-3 bg-white flex flex-col justify-center items-center">
@@ -41,6 +47,7 @@ const Form = () => {
           />
           <div className="mt-5">
             <button
+              type="button"
               onClick={() => setisFormOpen(false)}
               className="text-md font-bold mr-2 lg:mr-5 px-5 py-2 bg-gray-200 text-gray-800 hover:text-gray-50 hover:border-0 hover:bg-gray-600 rounded-md"
             >
@@ -48,6 +55,7 @@ const Form = () => {
             </button>
             <button
               onClick={submitTodoHandler}
+              onKeyPress={handleKeypressSubmit}
               type="submit"
               className="text-md font-bold px-5 py-2 bg-blue-500 text-white hover:bg-blue-700 rounded-md"
             >
