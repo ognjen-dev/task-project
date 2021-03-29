@@ -14,6 +14,7 @@ const ListItem = ({ text, todo }) => {
 
   const deleteHandler = () => {
     setTodos(todos.filter((el) => el.id !== todo.id));
+    setactiveTodo(null)
   };
 
   const completeHandler = () => {
