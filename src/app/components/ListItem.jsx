@@ -35,11 +35,31 @@ const ListItem = ({ text, todo }) => {
   };
 
   return (
-    <div className="bg-gray-50 rounded-md mx-6 py-7 my-2 flex flex-row justify-between px-5 items-center">
-      <button className="text-lg font-bold ml-5 focus:outline-none" onClick={activateTodoHandler}>{text}</button>
+    <div onClick={activateTodoHandler} className="cursor-pointer bg-gray-50 rounded-md mx-6 py-7 my-2 flex flex-row justify-between px-5 items-center">
+      <p
+        className="text-lg font-bold ml-5 focus:outline-none"
+      >
+        {text}
+      </p>
       <div>
-        <button className="text-lg hover:opacity-60" onClick={completeHandler}>✔️</button>
-        <button className="ml-5 text-lg hover:opacity-60" onClick={deleteHandler}>❌</button>
+        <button
+          className="focus:outline-none text-lg hover:opacity-60"
+          onClick={(e) => {
+            e.stopPropagation()
+            completeHandler();
+          }}
+        >
+          ✔️
+        </button>
+        <button
+          className="focus:outline-none ml-5 text-lg hover:opacity-60"
+          onClick={(e) => {
+            e.stopPropagation()
+            deleteHandler();
+          }}
+        >
+          ❌
+        </button>
       </div>
     </div>
   );
