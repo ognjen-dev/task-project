@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchInput = () => {
   return (
-    <div className="lg:ml-2 ml-1 bg-gray-50 flex flex-row justify-between lg:w-9/12 w-3/5 rounded-md items-center pr-3 py-3 mx-2 lg:text-md text-xs lg:max-w-xl -mr-0 xl:mr-0 font-semibold outline-none md:py-2">
+    <div className="lg:ml-3 ml-1 bg-gray-50 flex flex-row justify-between lg:w-6/12 w-3/5 rounded-md items-center pr-3 py-3 mx-2 lg:text-md text-xs lg:max-w-xl -mr-0 xl:mr-0 font-semibold outline-none md:py-2">
       <input type="text" className="text-gray-400 font-bold ml-4 bg-gray-50 outline-none" placeholder="Search Projects" />
       {/* <p className="text-gray-400 font-bold ml-4">
         Search projects
