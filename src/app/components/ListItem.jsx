@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { InputContext } from "app/components/context";
+import moment from 'moment'
 
-const ListItem = ({ text, todo, author, completed }) => {
+const ListItem = ({ text, todo, author, completed, created }) => {
   const context = useContext(InputContext);
   const {
     InputText,
@@ -46,7 +47,7 @@ const ListItem = ({ text, todo, author, completed }) => {
         <p className="text-md font-regular lg:flex lg:flex-row flex flex-col">
           <p>{author}</p>
           <p className="ml-5 lg:block hidden">&bull;</p>
-          <p className="mx-5">x months ago</p>
+          <p className="mx-5">{moment(created).fromNow()}</p>
           <p className="lg:block hidden">&bull;</p>
           {completed === true ? (
             <p className="ml-5 font-semibold text-red-400">Completed</p>

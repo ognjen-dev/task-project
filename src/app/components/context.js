@@ -9,10 +9,9 @@ const InputProvider = ({ children }) => {
     const [todos, setTodos] = useState([])
     const [activeTodo, setactiveTodo] = useState(null)
     const [isFormOpen, setisFormOpen] = useState(false)
-
-
+    const createdDate = new Date();
     return (
-        <InputContext.Provider value={{InputText, setInputText, todos, setTodos, isFormOpen, setisFormOpen, activeTodo, setactiveTodo, authorInput, setAuthorInput}}>
+        <InputContext.Provider value={{createdDate, InputText, setInputText, todos, setTodos, isFormOpen, setisFormOpen, activeTodo, setactiveTodo, authorInput, setAuthorInput}}>
             {children}
         </InputContext.Provider>
     )

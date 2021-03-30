@@ -12,8 +12,10 @@ const Form = () => {
     isFormOpen,
     setisFormOpen,
     authorInput,
-    setAuthorInput
+    setAuthorInput,
+    createdDate
   } = context;
+
 
   //_______________za_autora___________________
   const authorHandler = (e) => {
@@ -28,7 +30,7 @@ const Form = () => {
     e.preventDefault();
     setTodos([
       ...todos,
-      { text: InputText, author: authorInput, completed: false, id: Math.random() * 1000 },
+      { text: InputText, author: authorInput, created: createdDate, completed: false, id: Math.random() * 1000 },
     ]);
     setisFormOpen(false);
     setInputText("");
@@ -55,7 +57,7 @@ const Form = () => {
           />
           <input
             className="py-2 px-1 focus:outline-none rounded-md border-gray-300 border text-md"
-            placeholder="Title"
+            placeholder="Author"
             value={authorInput}
             type="text"
             onChange={authorHandler}
