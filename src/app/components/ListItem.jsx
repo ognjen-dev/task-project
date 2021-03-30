@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { InputContext } from "app/components/context";
 
-const ListItem = ({ text, todo, author }) => {
+const ListItem = ({ text, todo, author, completed }) => {
   const context = useContext(InputContext);
   const {
     InputText,
@@ -14,7 +14,7 @@ const ListItem = ({ text, todo, author }) => {
 
   const deleteHandler = () => {
     setTodos(todos.filter((el) => el.id !== todo.id));
-    setactiveTodo(null)
+    setactiveTodo(null);
   };
 
   const completeHandler = () => {
@@ -37,17 +37,29 @@ const ListItem = ({ text, todo, author }) => {
   };
 
   return (
-    <div onClick={activateTodoHandler} className="cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-md mx-6 py-7 my-2 flex flex-row justify-between px-5 items-center">
-      <p
-        className="text-lg font-bold ml-5 focus:outline-none"
-      >
-        {author} - {text}
-      </p>
+    <div
+      onClick={activateTodoHandler}
+      className="cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-md mx-6 py-7 my-2 flex flex-row justify-between px-5 items-center"
+    >
+      <div className="flex flex-col ml-5 w-72 justify-center items-start">
+        <p className="text-lg font-bold focus:outline-none">{text}</p>
+        <p className="text-md font-regular lg:flex lg:flex-row flex flex-col">
+          <p>{author}</p>
+          <p className="ml-5 lg:block hidden">&bull;</p>
+          <p className="mx-5">x months ago</p>
+          <p className="lg:block hidden">&bull;</p>
+          {completed === true ? (
+            <p className="ml-5 font-semibold text-red-400">Completed</p>
+          ) : (
+            <p className="ml-5 font-semibold text-blue-400">Active</p>
+          )}
+        </p>
+      </div>
       <div>
         <button
           className="focus:outline-none text-lg hover:opacity-60"
           onClick={(e) => {
-            e.stopPropagation()
+            e.stopPropagation();
             completeHandler();
           }}
         >
@@ -56,7 +68,7 @@ const ListItem = ({ text, todo, author }) => {
         <button
           className="focus:outline-none ml-5 text-lg hover:opacity-60"
           onClick={(e) => {
-            e.stopPropagation()
+            e.stopPropagation();
             deleteHandler();
           }}
         >
