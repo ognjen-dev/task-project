@@ -11,8 +11,15 @@ const Form = () => {
     todos,
     isFormOpen,
     setisFormOpen,
+    authorInput,
+    setAuthorInput
   } = context;
 
+  //_______________za_autora___________________
+  const authorHandler = (e) => {
+    setAuthorInput(e.target.value);
+  };
+  //___________________________________________
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
@@ -21,10 +28,11 @@ const Form = () => {
     e.preventDefault();
     setTodos([
       ...todos,
-      { text: InputText, completed: false, id: Math.random() * 1000 },
+      { text: InputText, author: authorInput, completed: false, id: Math.random() * 1000 },
     ]);
     setisFormOpen(false);
     setInputText("");
+    setAuthorInput("")
   };
 
   const handleKeypressSubmit = (e) => {
@@ -45,11 +53,18 @@ const Form = () => {
             type="text"
             onChange={inputTextHandler}
           />
+          <input
+            className="py-2 px-1 focus:outline-none rounded-md border-gray-300 border text-md"
+            placeholder="Title"
+            value={authorInput}
+            type="text"
+            onChange={authorHandler}
+          />
           <div className="mt-5">
             <button
               type="button"
               onClick={() => setisFormOpen(false)}
-              className="text-md font-bold mr-2 lg:mr-5 px-5 py-2 bg-gray-200 text-gray-800 hover:text-gray-50 hover:border-0 hover:bg-gray-600 rounded-md"
+              className="focus:outline-none text-md font-bold mr-2 lg:mr-5 px-5 py-2 bg-gray-200 text-gray-800 hover:text-gray-50 hover:border-0 hover:bg-gray-600 rounded-md"
             >
               Cancel
             </button>
@@ -57,7 +72,7 @@ const Form = () => {
               onClick={submitTodoHandler}
               onKeyPress={handleKeypressSubmit}
               type="submit"
-              className="text-md font-bold px-5 py-2 bg-blue-500 text-white hover:bg-blue-700 rounded-md"
+              className="focus:outline-none text-md font-bold px-5 py-2 bg-blue-500 text-white hover:bg-blue-700 rounded-md"
             >
               Create
             </button>

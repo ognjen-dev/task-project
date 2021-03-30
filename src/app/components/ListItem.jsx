@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { InputContext } from "app/components/context";
 
-const ListItem = ({ text, todo }) => {
+const ListItem = ({ text, todo, author }) => {
   const context = useContext(InputContext);
   const {
     InputText,
@@ -24,6 +24,7 @@ const ListItem = ({ text, todo }) => {
           return {
             ...item,
             completed: !item.completed,
+            author: item.author,
           };
         }
         return item;
@@ -40,7 +41,7 @@ const ListItem = ({ text, todo }) => {
       <p
         className="text-lg font-bold ml-5 focus:outline-none"
       >
-        {text}
+        {author} - {text}
       </p>
       <div>
         <button

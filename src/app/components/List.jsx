@@ -9,7 +9,7 @@ const List = () => {
     <div className="">
       <ul className="pt-1 rounded-b-xl bg-white pb-1 mb-5">
         {todos.map((todo) => (
-            <ListItem todo={todo} text={todo.text} key={todo.id} />
+            <ListItem todo={todo} author={todo.author} text={todo.text} key={todo.id} />
         ))}
       </ul>
     </div>
