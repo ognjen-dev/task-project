@@ -13,9 +13,8 @@ const Form = () => {
     setisFormOpen,
     authorInput,
     setAuthorInput,
-    createdDate
+    createdDate,
   } = context;
-
 
   //_______________za_autora___________________
   const authorHandler = (e) => {
@@ -30,11 +29,17 @@ const Form = () => {
     e.preventDefault();
     setTodos([
       ...todos,
-      { text: InputText, author: authorInput, created: createdDate, completed: false, id: Math.random() * 1000 },
+      {
+        text: InputText,
+        author: authorInput,
+        created: createdDate,
+        completed: false,
+        id: Math.random() * 1000,
+      },
     ]);
     setisFormOpen(false);
     setInputText("");
-    setAuthorInput("")
+    setAuthorInput("");
   };
 
   const handleKeypressSubmit = (e) => {
@@ -45,7 +50,7 @@ const Form = () => {
 
   return (
     <div className="fade-in z-20 fixed min-h-screen bg-black bg-opacity-70 w-full flex flex-col justify-center items-center">
-      <div className="h-52 w-80 pb-3 bg-white flex flex-col justify-center items-center">
+      <div className="h-56 w-80 pb-3 bg-white flex flex-col justify-center items-center">
         <p className="text-xl font-bold mb-5 text-gray-800">New Project</p>
         <form className="bg-white flex flex-col items-center justify-center">
           <input
@@ -56,7 +61,7 @@ const Form = () => {
             onChange={inputTextHandler}
           />
           <input
-            className="py-2 px-1 focus:outline-none rounded-md border-gray-300 border text-md"
+            className="py-2 px-1 mt-2 focus:outline-none rounded-md border-gray-300 border text-md"
             placeholder="Author"
             value={authorInput}
             type="text"

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { InputContext } from "app/components/context";
-import ListItem from 'app/components/ListItem'
+import ListItem from "app/components/ListItem";
 
 const List = () => {
   const context = useContext(InputContext);
@@ -9,7 +9,14 @@ const List = () => {
     <div className="">
       <ul className="pt-1 rounded-b-xl bg-white pb-1 mb-5">
         {todos.map((todo) => (
-            <ListItem todo={todo} author={todo.author} created={todo.createdDate} completed={todo.completed} text={todo.text} key={todo.id} />
+          <ListItem
+            todo={todo}
+            author={todo.author}
+            created={todo.createdDate}
+            completed={todo.completed}
+            text={todo.text}
+            key={todo.id}
+          />
         ))}
       </ul>
     </div>
