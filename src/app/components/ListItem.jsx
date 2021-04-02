@@ -42,7 +42,7 @@ const ListItem = ({ text, todo, author, completed, created }) => {
       onClick={activateTodoHandler}
       className="cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-md mx-6 lg:py-10 py-12 h-16 my-2 flex flex-row justify-between px-5 items-center"
     >
-      <div className="lg:block hidden flex flex-col ml-5 w-max justify-center items-start">
+      <div className="lg:block  hidden flex flex-col ml-5 w-max justify-center items-start">
         <p className="text-lg font-bold focus:outline-none">{text}</p>
         <p className="text-md font-regular lg:flex lg:flex-row flex flex-col">
           <p className="">{author}</p>
